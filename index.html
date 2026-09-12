@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f2e9" />
+  <title>Partyland — Telegram katalog</title>
+  <meta name="description" content="Tug‘ilgan kun va bayramlar uchun tayyor shar setlari, aktual narxlar va yangi kolleksiyalar Partyland Telegram kanalida." />
+  <script>
+    window.PARTYLAND = {
+      telegramUrl: "https://t.me/partyland_store",
+      pixelId: ""
+    };
+  </script>
+  <style>
+    :root{--bg:#f5f2e9;--paper:#fffdf7;--ink:#0b0b0b;--muted:#68665f;--line:rgba(11,11,11,.14);--acid:#dfff4f;--blue:#229ED9;--white:#fff;--radius:26px;--shadow:0 24px 70px rgba(0,0,0,.13)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden} a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:0 auto}
+    .ticker{background:var(--ink);color:#fff;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.12)}.ticker-track{display:flex;width:max-content;animation:marquee 23s linear infinite;padding:11px 0;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.ticker-track span{display:inline-flex;align-items:center;gap:18px;margin-right:18px}.ticker-track i{width:6px;height:6px;border-radius:50%;background:var(--acid)}@keyframes marquee{to{transform:translateX(-50%)}}
+    header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:950;letter-spacing:.14em}.mark{width:34px;height:34px;border:2px solid var(--ink);border-radius:50%;position:relative;display:inline-block;background:radial-gradient(circle at 50% 38%,#fff 0 20%,transparent 21%)}.mark:before{content:"";position:absolute;width:14px;height:18px;border-radius:50% 50% 46% 46%;background:#ff7eb6;left:8px;top:4px;box-shadow:8px 8px 0 -3px #7ed6ff,-8px 8px 0 -3px #ffd166}.mark:after{content:"";position:absolute;width:2px;height:8px;background:var(--ink);left:15px;bottom:2px;border-radius:99px}.nav-cta{font-size:13px;font-weight:900;display:flex;align-items:center;gap:8px}.nav-cta b{width:8px;height:8px;border-radius:50%;background:var(--acid);box-shadow:0 0 0 4px rgba(223,255,79,.25)}
+    .hero{padding:58px 0 84px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:72px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 12px;border:1px solid var(--line);background:rgba(255,255,255,.45);border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:24px}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--acid);border:1px solid var(--ink)}h1{font-size:clamp(54px,6.1vw,88px);line-height:.94;letter-spacing:-.067em;margin:0;max-width:760px}.hi{position:relative;display:inline-block;z-index:1}.hi:after{content:"";position:absolute;left:-2%;right:-2%;bottom:.05em;height:.32em;background:var(--acid);z-index:-1;transform:rotate(-1.2deg)}.sub{font-size:clamp(17px,1.7vw,21px);line-height:1.52;color:var(--muted);margin:25px 0 26px;max-width:640px}.cta{display:inline-flex;align-items:center;justify-content:center;gap:11px;background:var(--ink);color:#fff;min-height:64px;padding:0 24px;border-radius:14px;font-size:15px;font-weight:950;box-shadow:0 16px 34px rgba(0,0,0,.16);transition:.2s ease}.cta:hover{transform:translateY(-2px)}.cta svg{width:20px;height:20px;fill:currentColor}.cta .arrow{font-size:18px;transform:translateY(-1px)}.micro{display:flex;align-items:center;gap:10px;margin-top:13px;font-size:11px;font-weight:750;color:var(--muted)}.micro i{width:8px;height:8px;border-radius:50%;background:#38b66a}
+    .mock-wrap{position:relative;min-height:620px;display:grid;place-items:center}.blob{position:absolute;width:450px;height:450px;border-radius:50%;background:var(--acid);right:14px;top:60px}.phone{position:relative;z-index:3;width:min(350px,80%);height:600px;border:10px solid var(--ink);background:#111;border-radius:48px;box-shadow:var(--shadow);overflow:hidden;transform:rotate(2deg)}.notch{position:absolute;z-index:10;top:8px;left:50%;transform:translateX(-50%);width:116px;height:25px;background:var(--ink);border-radius:18px}.screen{position:absolute;inset:0;background:linear-gradient(180deg,#f8f3ec 0%,#f0eadf 100%);overflow:hidden}.screen:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,.56) 100%);pointer-events:none}.phone-head{position:absolute;z-index:5;left:20px;right:20px;top:42px;display:flex;align-items:center;justify-content:space-between;color:#111}.phone-logo{font-size:11px;font-weight:950;letter-spacing:.12em}.tg-dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:900}.phone-copy{position:absolute;z-index:6;left:22px;right:22px;bottom:24px;color:#fff}.phone-copy small{font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.8}.phone-copy h3{font-size:31px;line-height:.98;letter-spacing:-.04em;margin:7px 0 12px}.phone-pill{display:inline-flex;padding:9px 11px;background:#fff;color:var(--ink);border-radius:999px;font-size:10px;font-weight:950}.sticker{position:absolute;z-index:7;background:#fff;border:1px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:15px 16px;font-size:12px;font-weight:950;line-height:1.15}.s1{left:0;top:105px;transform:rotate(-7deg)}.s2{right:-8px;bottom:102px;transform:rotate(6deg);background:var(--acid)}.sticker small{display:block;font-size:9px;letter-spacing:.08em;color:var(--muted);margin-bottom:4px}
+    .balloon{position:absolute;border-radius:50% 50% 48% 48%;filter:drop-shadow(0 12px 10px rgba(0,0,0,.12));transform-origin:center bottom}.balloon:after{content:"";position:absolute;left:50%;bottom:-9px;width:12px;height:12px;background:inherit;transform:translateX(-50%) rotate(45deg);clip-path:polygon(0 0,100% 0,50% 100%)}.balloon:before{content:"";position:absolute;left:50%;bottom:-60px;width:1.5px;height:60px;background:rgba(11,11,11,.35);transform:translateX(-50%)}.b1{width:120px;height:150px;background:#ff6fae;left:36px;top:86px}.b2{width:100px;height:126px;background:#7ed6ff;left:142px;top:118px}.b3{width:88px;height:112px;background:#ffd166;left:224px;top:76px}.b4{width:92px;height:116px;background:#b39ddb;left:90px;top:248px}.b5{width:116px;height:146px;background:#9be7a7;left:182px;top:234px}.b6{width:74px;height:92px;background:#fff;border:1px solid rgba(0,0,0,.08);left:34px;top:388px}.balloon-shine{position:absolute;width:24%;height:30%;border-radius:50%;background:rgba(255,255,255,.35);left:22%;top:15%;filter:blur(1px)}.float-card{position:absolute;z-index:4;left:22px;right:22px;bottom:122px;background:rgba(255,255,255,.94);border:1px solid rgba(0,0,0,.08);border-radius:18px;padding:12px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 14px 30px rgba(0,0,0,.12)}.mini-balloons{display:flex;gap:4px}.mini-balloons span{width:18px;height:22px;border-radius:50% 50% 48% 48%;display:block}.mini-balloons span:nth-child(1){background:#ff6fae}.mini-balloons span:nth-child(2){background:#7ed6ff}.mini-balloons span:nth-child(3){background:#ffd166}.float-card b{display:block;font-size:11px}.float-card small{display:block;color:var(--muted);font-size:9px;margin-top:2px}
+    .proof{display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-bottom:1px solid var(--line)}.proof-item{padding:26px 18px;border-right:1px solid var(--line)}.proof-item:last-child{border-right:none}.proof-item span{display:block;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}.proof-item b{font-size:17px;letter-spacing:-.02em}
+    .section{padding:90px 0;border-bottom:1px solid var(--line)}.label{font-size:11px;font-weight:950;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:15px}h2{font-size:clamp(42px,5vw,68px);line-height:.96;letter-spacing:-.06em;margin:0;max-width:860px}.intro{font-size:15px;color:var(--muted);line-height:1.55;max-width:660px;margin:18px 0 0}.pain-list{margin-top:34px;border-top:1px solid var(--ink)}.pain{display:grid;grid-template-columns:54px 1fr auto;gap:18px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.x{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-size:18px;font-weight:900}.pain strong{font-size:20px;letter-spacing:-.02em}.pain em{font-style:normal;font-size:11px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .system{background:var(--ink);color:#fff}.system .label,.system .intro{color:rgba(255,255,255,.6)}.steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px;border:1px solid rgba(255,255,255,.17);border-radius:20px;overflow:hidden}.step{padding:30px 28px;min-height:255px;border-right:1px solid rgba(255,255,255,.17);position:relative}.step:last-child{border-right:none}.step-num{font-size:11px;font-weight:900;letter-spacing:.09em;color:var(--acid)}.step h3{font-size:29px;line-height:1;letter-spacing:-.04em;margin:56px 0 11px}.step p{margin:0;color:rgba(255,255,255,.62);font-size:13px;line-height:1.5}.step:after{content:"↗";position:absolute;right:22px;top:21px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.28);display:grid;place-items:center;color:var(--acid);font-size:16px}
+    .preview{display:grid;grid-template-columns:.92fr 1.08fr;gap:42px;align-items:center}.preview-art{min-height:500px;position:relative}.pic{position:absolute;inset:0 55px 0 0;border-radius:28px;overflow:hidden;background:linear-gradient(180deg,#f9f4eb,#efe5d5);box-shadow:var(--shadow)}.party-stage{position:absolute;inset:0;background:linear-gradient(180deg,#f8f3ec 0%,#eadfcd 100%);overflow:hidden}.arch{position:absolute;left:50%;top:44px;transform:translateX(-50%);width:78%;height:78%;border-radius:50% 50% 0 0;border:34px solid #ff8ec2;border-bottom:0}.arch:before,.arch:after{content:"";position:absolute;border-radius:50%;background:#7ed6ff}.arch:before{width:54px;height:68px;left:-22px;top:180px}.arch:after{width:58px;height:72px;right:-26px;top:110px;background:#ffd166}.floor{position:absolute;left:0;right:0;bottom:0;height:28%;background:linear-gradient(180deg,#d7c8b5,#c6b49e)}.gift{position:absolute;bottom:58px;left:50%;transform:translateX(-50%);width:132px;height:92px;background:#fff;border:2px solid var(--ink);border-radius:12px;box-shadow:7px 7px 0 rgba(11,11,11,.14)}.gift:before{content:"";position:absolute;left:50%;top:-2px;width:18px;height:96px;background:#ff6fae;transform:translateX(-50%)}.gift:after{content:"";position:absolute;left:50%;top:-24px;width:52px;height:24px;border:10px solid #ff6fae;border-bottom:0;border-radius:28px 28px 0 0;transform:translateX(-50%)}.stage-balloon{position:absolute;border-radius:50% 50% 48% 48%;box-shadow:0 10px 16px rgba(0,0,0,.12)}.stage-balloon:after{content:"";position:absolute;left:50%;bottom:-7px;width:10px;height:10px;background:inherit;transform:translateX(-50%) rotate(45deg)}.sb1{width:74px;height:92px;background:#7ed6ff;left:36px;bottom:76px}.sb2{width:86px;height:106px;background:#ff6fae;right:34px;bottom:92px}.sb3{width:62px;height:78px;background:#ffd166;left:110px;bottom:42px}.sb4{width:68px;height:84px;background:#9be7a7;right:104px;bottom:40px}.preview-note{position:absolute;right:0;bottom:44px;background:var(--acid);border:1px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:18px;width:180px;font-size:13px;font-weight:950;line-height:1.2}.checkline{display:grid;gap:12px;margin:26px 0 30px}.check{display:flex;gap:11px;align-items:flex-start;font-size:14px;font-weight:780}.check i{flex:0 0 23px;width:23px;height:23px;border-radius:50%;display:grid;place-items:center;background:var(--acid);border:1px solid var(--ink);font-style:normal;font-size:12px}
+    .final{padding:90px 0 115px}.final-card{background:var(--acid);border:2px solid var(--ink);box-shadow:10px 10px 0 var(--ink);border-radius:22px;padding:54px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;position:relative;overflow:hidden}.final-card:after{content:"PARTYLAND";position:absolute;right:-16px;top:6px;font-size:86px;font-weight:950;letter-spacing:-.06em;color:rgba(11,11,11,.07);white-space:nowrap;pointer-events:none}.final-card h2{font-size:clamp(42px,5vw,64px);max-width:680px;position:relative;z-index:2}.final-card p{margin:13px 0 0;font-size:14px;line-height:1.5;max-width:580px;position:relative;z-index:2}.final-card .cta{position:relative;z-index:2;min-width:260px}footer{padding:0 0 90px;text-align:center;color:var(--muted);font-size:11px}.sticky{display:none;position:fixed;z-index:30;left:12px;right:12px;bottom:calc(11px + env(safe-area-inset-bottom));height:58px;border-radius:14px;background:var(--ink);color:#fff;align-items:center;justify-content:center;gap:9px;font-size:14px;font-weight:950;box-shadow:0 16px 40px rgba(0,0,0,.3)}.sticky:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acid)}.reveal{opacity:0;transform:translateY(16px);transition:.65s cubic-bezier(.2,.7,.2,1)}.reveal.on{opacity:1;transform:none}
+    @media(max-width:940px){.hero-grid,.preview{grid-template-columns:1fr;gap:44px}.mock-wrap{min-height:540px}.phone{height:530px}.proof{grid-template-columns:1fr 1fr}.proof-item:nth-child(2){border-right:none}.proof-item:nth-child(-n+2){border-bottom:1px solid var(--line)}.steps{grid-template-columns:1fr}.step{border-right:none;border-bottom:1px solid rgba(255,255,255,.17);min-height:220px}.step:last-child{border-bottom:none}.preview-art{min-height:430px}.final-card{grid-template-columns:1fr}.final-card .cta{width:100%}}
+    @media(max-width:620px){.wrap{width:min(100% - 26px,1180px)}header{height:66px}.nav-cta{font-size:11px}.brand{font-size:12px}.mark{width:31px;height:31px}.hero{padding:36px 0 56px}.hero-grid{gap:30px}.eyebrow{font-size:9px;margin-bottom:18px}h1{font-size:46px;line-height:.94}.sub{font-size:15px;margin:18px 0 20px}.cta{width:100%;min-height:59px;border-radius:12px;font-size:13px}.micro{justify-content:center;font-size:10px}.mock-wrap{min-height:430px}.blob{width:315px;height:315px;right:5px;top:46px}.phone{width:250px;height:420px;border-width:8px;border-radius:36px}.notch{width:90px;height:20px}.phone-head{top:34px;left:15px;right:15px}.phone-copy{left:17px;right:17px;bottom:18px}.phone-copy h3{font-size:24px}.b1{width:84px;height:108px;left:20px;top:58px}.b2{width:72px;height:92px;left:102px;top:82px}.b3{width:64px;height:82px;left:168px;top:54px}.b4{width:66px;height:84px;left:66px;top:188px}.b5{width:82px;height:104px;left:128px;top:176px}.b6{width:52px;height:66px;left:20px;top:292px}.float-card{left:14px;right:14px;bottom:92px;padding:9px 10px}.s1{left:0;top:72px}.s2{right:0;bottom:62px}.sticker{padding:11px 12px;font-size:10px;box-shadow:4px 4px 0 var(--ink)}.proof-item{padding:18px 12px}.proof-item b{font-size:14px}.proof-item span{font-size:8px}.section{padding:62px 0}.label{font-size:9px}h2{font-size:39px}.intro{font-size:13px}.pain{grid-template-columns:40px 1fr;padding:18px 0;gap:12px}.x{width:32px;height:32px;font-size:15px}.pain strong{font-size:16px}.pain em{display:none}.step{padding:24px 22px;min-height:190px}.step h3{font-size:26px;margin-top:44px}.preview-art{min-height:360px}.pic{right:28px;border-radius:22px}.preview-note{right:0;bottom:24px;width:150px;padding:14px;font-size:11px;box-shadow:4px 4px 0 var(--ink)}.final{padding:62px 0 92px}.final-card{padding:34px 22px;border-radius:18px;box-shadow:6px 6px 0 var(--ink)}.final-card h2{font-size:39px}.final-card:after{font-size:56px;top:16px}.sticky{display:flex}footer{padding-bottom:90px}}
+  </style>
+</head>
+<body>
+  <div class="ticker"><div class="ticker-track">
+    <span><i></i> TAYYOR BAYRAM SETLARI</span><span><i></i> YANGI KOLLEKSIYALAR</span><span><i></i> MAXSUS TAKLIFLAR</span><span><i></i> TELEGRAM KATALOG</span>
+    <span><i></i> TAYYOR BAYRAM SETLARI</span><span><i></i> YANGI KOLLEKSIYALAR</span><span><i></i> MAXSUS TAKLIFLAR</span><span><i></i> TELEGRAM KATALOG</span>
+  </div></div>
+
+  <header class="wrap">
+    <div class="brand"><span class="mark"></span>PARTYLAND</div>
+    <a class="nav-cta tg-link" href="#"><b></b> Telegram kanal →</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <div class="eyebrow"><i></i> Telegram katalog · 1 bosishda</div>
+          <h1>Bayram uchun <span class="hi">eng chiroyli g‘oyalar</span> — bir joyda.</h1>
+          <p class="sub">Tug‘ilgan kun, surprise, baby shower va boshqa bayramlar uchun tayyor shar setlari, aktual narxlar hamda yangi kolleksiyalarni Partyland Telegram kanalida ko‘ring.</p>
+          <a class="cta tg-link" data-place="hero" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 15.65 9.4 21c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.54 1.65.26 1.91-.89l3.46-16.2h.01c.31-1.45-.52-2.02-1.47-1.67L1.86 10.94C.47 11.48.49 12.25 1.62 12.6l5.2 1.62L18.9 6.66c.57-.38 1.09-.17.66.21z"/></svg>
+            TELEGRAM KANALGA KIRISH <span class="arrow">→</span>
+          </a>
+          <div class="micro"><i></i> Bepul · Ro‘yxatdan o‘tish shart emas</div>
+        </div>
+
+        <div class="mock-wrap reveal">
+          <div class="blob"></div>
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="balloon b1"><span class="balloon-shine"></span></div>
+              <div class="balloon b2"><span class="balloon-shine"></span></div>
+              <div class="balloon b3"><span class="balloon-shine"></span></div>
+              <div class="balloon b4"><span class="balloon-shine"></span></div>
+              <div class="balloon b5"><span class="balloon-shine"></span></div>
+              <div class="balloon b6"><span class="balloon-shine"></span></div>
+              <div class="float-card"><div class="mini-balloons"><span></span><span></span><span></span></div><div><b>Bugungi bestseller set</b><small>Telegram kanalida ko‘ring</small></div></div>
+            </div>
+            <div class="phone-head"><div class="phone-logo">PARTYLAND</div><div class="tg-dot">↗</div></div>
+            <div class="phone-copy"><small>Telegram katalog</small><h3>Har bir bayramga<br>mos g‘oya.</h3><span class="phone-pill">KANALDA KO‘RISH →</span></div>
+          </div>
+          <div class="sticker s1"><small>01 / YANGI</small>Har hafta<br>yangi setlar</div>
+          <div class="sticker s2"><small>02 / BAYRAM</small>Tug‘ilgan kun<br>va surprise g‘oyalari</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof wrap reveal">
+      <div class="proof-item"><span>01</span><b>Tayyor setlar</b></div>
+      <div class="proof-item"><span>02</span><b>Aktual narxlar</b></div>
+      <div class="proof-item"><span>03</span><b>Yangi kolleksiyalar</b></div>
+      <div class="proof-item"><span>04</span><b>Maxsus takliflar</b></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="label reveal">Nega Telegram?</div>
+        <h2 class="reveal">Bayramni rejalash endi ancha oson.</h2>
+        <p class="intro reveal">Kerakli rang, tayyor kompozitsiya yoki budjetga mos variantni izlab o‘tirmang. Partyland Telegram kanalida barchasi bir joyda jamlangan.</p>
+        <div class="pain-list reveal">
+          <div class="pain"><div class="x">✓</div><strong>Qaysi shar seti mosligini tez tanlang</strong><em>Tayyor g‘oyalar</em></div>
+          <div class="pain"><div class="x">✓</div><strong>Narxlarni oldindan ko‘rib chiqing</strong><em>Qulay tanlov</em></div>
+          <div class="pain"><div class="x">✓</div><strong>Trend rang va dizaynlarni kuzating</strong><em>Yangi kolleksiya</em></div>
+          <div class="pain"><div class="x">✓</div><strong>Maxsus takliflardan birinchi xabar toping</strong><em>Faqat kanalda</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section system">
+      <div class="wrap">
+        <div class="label reveal">Yechim</div>
+        <h2 class="reveal">Partyland Telegram katalogi.</h2>
+        <p class="intro reveal">Ko‘rish, tanlash va buyurtmaga o‘tish — hammasi sodda.</p>
+        <div class="steps reveal">
+          <article class="step"><div class="step-num">01 / KO‘RING</div><h3>Tayyor setlar</h3><p>Tug‘ilgan kun, surprise, baby shower va boshqa bayramlar uchun eng chiroyli kompozitsiyalarni bir joyda ko‘ring.</p></article>
+          <article class="step"><div class="step-num">02 / TANLANG</div><h3>Narx + variantlar</h3><p>Budjetingizga mos variantlarni solishtirib, o‘zingizga yoqqan setni tezroq tanlang.</p></article>
+          <article class="step"><div class="step-num">03 / BUYURTMA</div><h3>Qulay bog‘lanish</h3><p>Yoqqan dizaynni tanlab, kanal orqali buyurtmaga o‘tish uchun kerakli ma’lumotlarni oling.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap preview">
+        <div class="preview-art reveal">
+          <div class="pic">
+            <div class="party-stage">
+              <div class="arch"></div>
+              <div class="stage-balloon sb1"></div><div class="stage-balloon sb2"></div><div class="stage-balloon sb3"></div><div class="stage-balloon sb4"></div>
+              <div class="gift"></div><div class="floor"></div>
+            </div>
+          </div>
+          <div class="preview-note">Keyingi bayramingiz uchun ilhomni shu yerdan boshlang ↗</div>
+        </div>
+        <div class="reveal">
+          <h2>Bayramingizga yarashadigan tanlov.</h2>
+          <div class="label" style="margin-top:30px">Telegram ichida</div>
+          <div class="checkline">
+            <div class="check"><i>✓</i><span>Tayyor tug‘ilgan kun va surprise setlari</span></div>
+            <div class="check"><i>✓</i><span>Yangi shar va dekor kolleksiyalari</span></div>
+            <div class="check"><i>✓</i><span>Aktual narxlar va maxsus takliflar</span></div>
+            <div class="check"><i>✓</i><span>Har xil bayram uchun ilhom va g‘oyalar</span></div>
+          </div>
+          <a class="cta tg-link" data-place="middle" href="#">SETLARNI KO‘RISH <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap">
+        <div class="final-card reveal">
+          <div><div class="label" style="color:#0b0b0b">Oxirgi qadam</div><h2>Keyingi bayram g‘oyalarini o‘tkazib yubormang.</h2><p>Partyland Telegram kanaliga qo‘shiling va yangi shar setlari, aktual narxlar hamda maxsus takliflarni birinchi bo‘lib ko‘ring.</p></div>
+          <a class="cta tg-link" data-place="final" href="#">TELEGRAMGA O‘TISH →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">© 2026 Partyland · Telegram katalog</footer>
+  <a class="sticky tg-link" data-place="sticky" href="#">TELEGRAM KANALGA KIRISH →</a>
+
+  <script>
+    (function(){
+      const cfg = window.PARTYLAND || {};
+      const tg = cfg.telegramUrl || '#';
+      document.querySelectorAll('.tg-link').forEach(a=>{
+        a.href=tg;
+        a.target='_blank';
+        a.rel='noopener';
+        a.addEventListener('click',()=>{
+          const placement=a.dataset.place || 'header';
+          if(typeof fbq==='function') fbq('trackCustom','TelegramClick',{placement});
+        });
+      });
+      if(cfg.pixelId){
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init',cfg.pixelId);fbq('track','PageView');
+      }
+      const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+      document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    })();
+  </script>
+</body>
+</html>
